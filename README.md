@@ -1,2 +1,0 @@
-# olivet
-olivet OFF Day

@@ -52,24 +52,25 @@ footer {
 
 #about, #history, #elmore, #savoy, #off-day {
 	height: 100%;
-	padding: 7em 0 0 3em;
-	border: 2px solid red;
+	padding: 7em 0 0 6em;
 }
 
 #welcome p, #about p, #history p, #elmore p, #savoy p, #savoy blockquote, #off-day p {
-	max-width: 44%;
+	max-width: 35%;
+	line-height: 1.5em;
 }
 
 .pullquote {
-	width: 33%;
+	width: 25%;
 	height: auto;
-	font-size: 2em;
+	font-size: 1.7em;
 	font-style: italic;
-	background-color: #291aaa;
+	background-color: #b11e4f;
 	padding: 30px;
 	position: absolute;
-	left: 33%;
+	left: 37.5%;
 	margin-top: -7%;
+	line-height: 1.3em;
 }
 
 .pullquote span {
@@ -82,22 +83,10 @@ footer {
 
 /* Sections */
 
-nav a:hover{
-	border-radius: 10%;
-	background-color: rgba(0,0,0,0.3);
-	transition-duration: 0.5s;
-	transition-property: color;
-	transition-property: background-color;
-	transition-timing-function: ease-in-out;
-}
-
-
-
 #welcome {
 	text-align: center;
 	height: 60%;
 	padding: 23% 0 0 0;
-	border: 2px solid red;
 }
 
 #welcome h1 strong {
@@ -106,10 +95,6 @@ nav a:hover{
 
 #welcome h2 {
 	font-family: 'nadia', serif;
-}
-
-#about h2 {
-	font-size: 2em;
 }
 
 .pullquote p {

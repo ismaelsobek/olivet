@@ -37,6 +37,7 @@ nav {
 nav a {
 	padding: 0 2em;
 	color: #fff;
+	text-decoration: none;
 }
 
 footer {
@@ -96,14 +97,6 @@ footer {
 	font-family: 'Playfair Display', serif;
 }
 
-#about {
-	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/wall.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: none;
-	color: white;
-}
-
 #about h2 {
 	font-size: 2em;
 }
@@ -119,7 +112,51 @@ footer {
 .pullquote p {
 	margin: 0;
 }
-			
+
+/* Fixed image backgrounds */
+
+#welcome {
+	background-image: url(images/welcome.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#about {
+	background-image: url(images/about.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#history {
+	background-image: url(images/savoy.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#elmore {
+	background-image: url(images/welcome.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#savoy {
+	background-image: url(images/about.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#off-day {
+	background-image: url(images/savoy.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+		
 /* Responsive goodness */
 
 @media only screen 

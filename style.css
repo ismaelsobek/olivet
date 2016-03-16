@@ -31,11 +31,14 @@ nav {
 	text-align: center;
 	background: #000;
 	z-index: 100;
+
+
 }
 
 nav a {
 	padding: 0 2em;
 	color: #fff;
+	text-decoration: none;
 }
 
 footer {
@@ -47,7 +50,7 @@ footer {
 	height: 60%;
 	padding: 23% 0 0 0;
 	border: 2px solid red;
-	background-image: url(images/home.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/home.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: none;
@@ -86,6 +89,17 @@ footer {
 
 /* Sections */
 
+nav a:hover{
+	border-radius: 10%;
+	background-color: rgba(0,0,0,0.3);
+	transition-duration: 0.5s;
+	transition-property: color;
+	transition-property: background-color;
+	transition-timing-function: ease-in-out;
+}
+
+
+
 #welcome {
 	text-align: center;
 }
@@ -111,7 +125,7 @@ footer {
 }
 
 #history {
-	background-image: url(images/savoy.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/savoy.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: none;

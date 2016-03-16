@@ -81,6 +81,7 @@ footer {
 	height: 60%;
 	padding: 23% 0 0 0;
 	border: 2px solid red;
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/home.JPG);
 	background-position: center;
 	background-size: cover;
 	background-repeat: none;
@@ -95,7 +96,6 @@ footer {
 	font-family: 'Playfair Display', serif;
 }
 
-/*
 #about {
 	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/wall.jpg);
 	background-position: center;
@@ -103,7 +103,6 @@ footer {
 	background-repeat: none;
 	color: white;
 }
-*/
 
 #about h2 {
 	font-size: 2em;

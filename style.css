@@ -10,6 +10,7 @@ nav, h1, h2, .pullquote span {
 	font-style: normal; 
 	text-transform: uppercase; 
 	word-spacing: 0.3em; 
+	overflow: auto;
 }
 
 /* Layout */
@@ -30,6 +31,7 @@ nav {
 	padding: 2em 0;
 	text-align: center;
 	background: #000;
+	z-index: 100;
 }
 
 nav a {
@@ -65,7 +67,7 @@ footer {
 
 .pullquote {
 	width: 33%;
-	height: 30%;
+	height: 20%;
 	font-size: 2em;
 	font-style: italic;
 	background-color: #291aaa;

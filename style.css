@@ -5,17 +5,24 @@
 @import url(fonts/bebas/stylesheet.css);
 
 nav, h1, h2, .pullquote span { 
-	font-family: 'bebasregular', sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	text-transform: uppercase;
-	word-spacing: 0.3em;
+	font-family: 'bebasregular', sans-serif; 
+	font-weight: normal; 
+	font-style: normal; 
+	text-transform: uppercase; 
+	word-spacing: 0.3em; 
 }
 
 /* Layout */
 
-html { height: 100%; }
-body { height: 100%; margin: 0; padding: 0; font-family: 'Playfair Display', serif; font-size: 16px; }
+html { 
+	height: 100%; 
+}
+body { height: 100%; 
+	margin: 0; 
+	padding: 0; 
+	font-family: 'Playfair Display', serif; 
+	font-size: 16px; 
+}
 
 nav {
 	position: fixed;
@@ -23,6 +30,7 @@ nav {
 	padding: 2em 0;
 	text-align: center;
 	background: #000;
+	z-index: 100;
 }
 
 nav a {
@@ -36,9 +44,14 @@ footer {
 }
 
 #welcome {
-	height: 77%;
+	height: 60%;
 	padding: 23% 0 0 0;
 	border: 2px solid red;
+	background-image: url(images/home.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	color: white;
 }
 
 #about, #history, #elmore, #savoy, #off-day {
@@ -52,17 +65,23 @@ footer {
 }
 
 .pullquote {
-	width: 40%;
-	margin: auto;
-	padding: 1em 0 2em 0;
+	width: 33%;
+	height: 20%;
 	font-size: 2em;
 	font-style: italic;
+	background-color: #291aaa;
+	padding: 30px;
+	position: absolute;
+	left: 33%;
+	margin-top: -7%;
 }
 
 .pullquote span {
 	display: block;
 	font-size: .5em;
 	text-align: right;
+	padding-top: 20px;
+
 }
 
 /* Sections */
@@ -77,6 +96,30 @@ footer {
 
 #welcome h2 {
 	font-family: 'Playfair Display', serif;
+}
+
+#about {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/wall.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	color: white;
+}
+
+#about h2 {
+	font-size: 2em;
+}
+
+#history {
+	background-image: url(images/savoy.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	color: white;
+}
+
+.pullquote p {
+	margin: 0;
 }
 			
 /* Responsive goodness */

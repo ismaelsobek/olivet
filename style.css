@@ -19,17 +19,10 @@ html {
 }
 
 body {
-<<<<<<< HEAD
 	height: 100%; 
 	margin: 0; 
 	padding: 0; 
 	font-family: 'nadia', serif; 
-=======
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: 'Playfair Display', serif; 
->>>>>>> css-parallax
 	font-size: 16px; 
 	background: #000;
 	color: #fff;
@@ -57,20 +50,6 @@ footer {
 	text-align: center;
 }
 
-<<<<<<< HEAD
-#welcome {
-	height: 60%;
-	padding: 23% 0 0 0;
-	border: 2px solid red;
-	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/home.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: none;
-	color: white;
-}
-
-=======
->>>>>>> css-parallax
 #about, #history, #elmore, #savoy, #off-day {
 	height: 100%;
 	padding: 7em 0 0 3em;
@@ -119,11 +98,6 @@ nav a:hover{
 	height: 60%;
 	padding: 23% 0 0 0;
 	border: 2px solid red;
-	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/home.JPG);
-	background-position: center;
-	background-size: cover;
-	background-repeat: none;
-	color: white;
 }
 
 #welcome h1 strong {
@@ -131,19 +105,11 @@ nav a:hover{
 }
 
 #welcome h2 {
-	font-family: 'Linden Hill', serif;
+	font-family: 'nadia', serif;
 }
 
 #about h2 {
 	font-size: 2em;
-}
-
-#history {
-	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/savoy.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: none;
-	color: white;
 }
 
 .pullquote p {

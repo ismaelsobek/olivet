@@ -17,6 +17,7 @@ nav, h1, h2, .pullquote span {
 html { 
 	height: 100%; 
 }
+
 body { height: 100%; 
 	margin: 0; 
 	padding: 0; 
@@ -94,6 +95,7 @@ footer {
 	font-family: 'Playfair Display', serif;
 }
 
+/*
 #about {
 	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/wall.jpg);
 	background-position: center;
@@ -101,6 +103,7 @@ footer {
 	background-repeat: none;
 	color: white;
 }
+*/
 
 #about h2 {
 	font-size: 2em;

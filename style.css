@@ -43,17 +43,6 @@ footer {
 	text-align: center;
 }
 
-#welcome {
-	height: 60%;
-	padding: 23% 0 0 0;
-	border: 2px solid red;
-	background-image: url(images/home.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: none;
-	color: white;
-}
-
 #about, #history, #elmore, #savoy, #off-day {
 	height: 100%;
 	padding: 7em 0 0 3em;
@@ -88,6 +77,13 @@ footer {
 
 #welcome {
 	text-align: center;
+	height: 60%;
+	padding: 23% 0 0 0;
+	border: 2px solid red;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	color: white;
 }
 
 #welcome h1 strong {

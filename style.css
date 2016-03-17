@@ -1,39 +1,96 @@
 
-/* Typography */
+/*   Typography */
 
 @import url(fonts/nadia/stylesheet.css);
 @import url(fonts/bebas/stylesheet.css);
 
 body {
-	font-family: 'nadia', serif; 
-	font-size: 18px;
+	font-family: Palatino, 'nadia', serif;
+	font-size: 16px;
 }
 
-nav, h1, h3, .pullquote span { 
-	font-family: 'bebas', sans-serif; 
+nav, h1, h3, .pullquote span {
+	font-family: 'bebas', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	text-transform: uppercase;
 	word-spacing: 0.3em;
 }
 
-#welcome h2 {
-	font-family: 'nadia', serif;
+h3 {
+	font-size: 1.7em;
+}
+
+#welcome h1 {
+	font-size: 1.4em;
+}
+
+#welcome h1 strong {
+	font-size: 2em;
+	line-height: 2em;
 }
 
 .pullquote {
 	font-size: 1.4em;
-	line-height: 1.1em;
+	line-height: 1.2em;
 	font-style: italic;
 }
 
-footer {
+.pullquote span {
 	font-size: .7em;
+	line-height: .7em;
 }
 
-#welcome p, #about p, #history p, #elmore p, #savoy p, #savoy blockquote, #off-day p {
-	line-height: 1.4em;
+#welcome p, #intro p, #history p, #elmore p, #savoy p, #savoy blockquote, #off-day p {
+	font-size: 1em;
+	line-height: 1.5em;
 }
+
+	/* Paragraphs and text */
+
+.centered p, .centered p span, .centered h3 {
+	width: 50%;
+	margin: 1em 25% 1em 25%;
+}
+
+.left-aligned p, .left-aligned h3 {
+	max-width: 33%;
+	min-width: 26em;
+}
+
+.pullquote.right-aligned p, .right-aligned h3 {
+	float: right;
+	width: 44%;
+	margin: 1em 28% 1em 28%;
+}
+
+#welcome p, #intro p, #history p, #elmore p, #savoy p, #off-day p {
+	min-width: 26em;
+}
+
+	/* Pullquotes */
+
+.pullquote {
+	position: absolute;
+	left: 33%;
+	width: 33%;
+	max-width: 14em;
+	margin: -3em 3em 0 0;
+	background: #b11e4f;
+	padding: 2em 1.5em 2em 1.4em;
+	z-index: 2;
+}
+
+.pullquote span {
+	display: block;
+	text-align: right;
+	padding-top: 1em;
+}
+
+.pullquote p {
+	margin: 0;
+}
+
 
 /* Layout */
 
@@ -50,14 +107,14 @@ body {
 }
 
 a {
-	color: #fff;
+	color: #b11e4f;
 }
 
 nav {
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	background: #000; /* fallback */
+	background: #0b0015;
 	z-index: 3;
 }
 
@@ -80,14 +137,9 @@ footer {
 
 /* Sections  */
 
-#welcome, #about, #history, #elmore, #savoy, #off-day {
+#welcome, #intro, #history, #elmore, #savoy, #off-day {
 	padding: 10em 7em 10em 7em;
 	min-height: 55%;
-}
-
-#welcome p, #about p, #history p, #elmore p, #savoy p, #off-day p {
-	max-width: 33%;
-	min-width: 33em;
 }
 
 #welcome {
@@ -101,14 +153,17 @@ footer {
 	display: block;
 }
 
-
 #savoy blockquote {
 	max-width: 20%;
 	min-width: 22em;
 }
 
+#off-day h3, #off-day p {
+	color: #000;
+}
+
 #video {
-	margin: -18em auto 3em 15%;
+	margin: -14em auto 3em 15%;
 	width: 70%;
 }
 
@@ -121,7 +176,7 @@ footer {
 	background-size: cover;
 }
 
-#about {
+#intro {
 	background-image: url(images/about.jpg);
 	background-position: center center;
 	background-size: cover;
@@ -142,6 +197,13 @@ footer {
 
 #savoy {
 	background-image: url(images/savoy.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#off-day {
+	background-image: url(images/offday.jpg);
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
@@ -176,5 +238,11 @@ footer {
 
 @media only screen 
 and (max-width: 575px) {
+	
+}
+
+/* trying out css parallax —— WARNING: WRAPPING " } " AT END OF STYLESHEET */
+
+@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
 	
 }

@@ -49,13 +49,15 @@ body {
 	color: #fff;
 }
 
+a {
+	color: #fff;
+}
+
 nav {
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	background: #33025e; /* fallback */
-	background: -moz-linear-gradient(bottom, rgba(37, 5, 71, 1), rgba(176, 30, 79, 0.7)); /* firefox fallback */
-    background: linear-gradient(to bottom, rgba(37, 5, 71, 1), rgba(176, 30, 79, 0.7));
+	background: #000; /* fallback */
 	z-index: 3;
 }
 
@@ -68,7 +70,7 @@ nav a {
 
 nav a:hover {
 	color: #fff;
-	background: #000;
+	background: #b11e4f;
 }
 
 footer {
@@ -103,6 +105,11 @@ footer {
 #savoy blockquote {
 	max-width: 20%;
 	min-width: 22em;
+}
+
+#video {
+	margin: -18em auto 3em 15%;
+	width: 70%;
 }
 
 /* Fixed image backgrounds */
@@ -148,7 +155,7 @@ footer {
 	width: 33%;
 	max-width: 44em;
 	margin: -3em 3em 0 0;
-	background: #b11e4f; /* fallback */
+	background: #b11e4f;
 	padding: 2em 1.5em 2em 1.4em;
 	z-index: 2;
 }

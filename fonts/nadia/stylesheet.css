@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'nadia';
+    src: url('nadia_serif.otf') format('opentype'),
+         url('nadia_serif.ttf') format('truetype'),
+         url('nadia_serif.svg#nadia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

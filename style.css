@@ -90,6 +90,7 @@ footer {
 }
 
 #welcome {
+	text-shadow: 1px 1px 7px black;
 	text-align: center;
 	height: 66%;
 	padding: 23% 0 0 0;

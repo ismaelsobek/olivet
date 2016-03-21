@@ -5,7 +5,7 @@
 @import url(fonts/bebas/stylesheet.css);
 
 body {
-	font-family: Palatino, "Lucida Bright", "Book Antiqua", Times, serif;
+	font-family: Palatino, "nadia", "Lucida Bright", "Book Antiqua", Times, serif;
 	font-size: 16px;
 }
 
@@ -18,7 +18,7 @@ nav, h1, h3, .pullquote span {
 }
 
 h3 {
-	font-size: 1.7em;
+	font-size: 2em;
 }
 
 #welcome h1 {
@@ -72,24 +72,36 @@ h3 {
 
 .pullquote {
 	position: absolute;
+	background: #3d0000;
 	left: 33%;
 	width: 33%;
 	max-width: 14em;
 	margin: -3em 3em 0 0;
-	background: #9f1443;
 	padding: 2em 1.5em 2em 1.4em;
 	z-index: 2;
+	border-radius: 3px 16px 3px 16px;
+	border: 1px groove #c312de;
 }
 
 .pullquote span {
+	color: #e11b5d;
 	display: block;
 	text-align: right;
 	padding-top: 1em;
 }
 
 .pullquote p {
+	font-weight: bold;
 	margin: 0;
+	
+	background: -webkit-linear-gradient(top, #ea5fff 0%, #d281f5 100%);
+	background: linear-gradient(top, #e11b5d, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
 }
+
+
 
 /* Layout */
 
@@ -130,8 +142,10 @@ nav a:hover {
 }
 
 a.donate {
-	display: inline-block;
-	margin: 1em;
+	display: block;
+	max-width: 9em;
+	text-align: center;
+	margin: 2em auto;
 	padding: 1em 1.4em;
 	color: #fff;
 	background: #9f1443;
@@ -142,6 +156,8 @@ footer {
 	text-align: center;
 }
 
+
+
 /* Sections  */
 
 #welcome, #intro, #history, #elmore, #savoy, #off-day {
@@ -150,10 +166,16 @@ footer {
 }
 
 #welcome {
-	text-shadow: 1px 1px 7px black;
 	text-align: center;
 	height: 66%;
 	padding: 23% 0 0 0;
+}
+
+#welcome h1 {
+	background: -webkit-linear-gradient(top, #e11b5d, #e4a4ff);
+	background: linear-gradient(top, #e11b5d, #e4a4ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #welcome h1 strong {

@@ -5,7 +5,6 @@
 @import url(fonts/bebas/stylesheet.css);
 
 body {
-<<<<<<< HEAD
 	font-family: Palatino, "nadia", "Lucida Bright", "Book Antiqua", Times, serif;
 	font-size: 16px;
 }
@@ -73,19 +72,16 @@ h3 {
 
 .pullquote {
 	position: absolute;
-	background: #3d0000;
-	left: 33%;
+	background: #9f1443;
+	left: 30%;
 	width: 33%;
 	max-width: 14em;
 	margin: -3em 3em 0 0;
 	padding: 2em 1.5em 2em 1.4em;
 	z-index: 2;
-	border-radius: 3px 16px 3px 16px;
-	border: 1px groove #c312de;
 }
 
 .pullquote span {
-	color: #e11b5d;
 	display: block;
 	text-align: right;
 	padding-top: 1em;
@@ -94,12 +90,6 @@ h3 {
 .pullquote p {
 	font-weight: bold;
 	margin: 0;
-	
-	background: -webkit-linear-gradient(top, #ea5fff 0%, #d281f5 100%);
-	background: linear-gradient(top, #e11b5d, #fff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
 }
 
 
@@ -126,7 +116,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	background: #0b0015;
+	background: #000;
 	z-index: 3;
 }
 
@@ -143,6 +133,9 @@ nav a:hover {
 }
 
 a.donate {
+	font-family: 'bebas', sans-serif;
+	font-size: 1.4em;
+	text-decoration: none;
 	display: block;
 	max-width: 9em;
 	text-align: center;
@@ -170,13 +163,6 @@ footer {
 	text-align: center;
 	height: 66%;
 	padding: 23% 0 0 0;
-}
-
-#welcome h1 {
-	background: -webkit-linear-gradient(top, #e11b5d, #e4a4ff);
-	background: linear-gradient(top, #e11b5d, #e4a4ff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 
 #welcome h1 strong {
@@ -246,24 +232,95 @@ and (max-width: 575px) {
 	
 	body {
 		font-size: 16px;
+		margin: 0;
+		padding: 0;
 	}
 	nav {
 		position: static;
+		height: 100%;
 	}
 	nav a {
 		display: block;
+		height: 25%;
+		line-height: 5em;
+		padding: 0;
 	}
 	
-	#welcome p, #intro p, #history p, #elmore p, #savoy p, #off-day p {
-		min-width: none !important;
+	nav, h1, h3, .pullquote span {
+		word-spacing: normal;
+	}
+
+	
+	#welcome, #intro, #history, #elmore, #savoy, #off-day {
+		margin: 0;
+		height: auto;
+		min-height: none;
+		padding: 1em;
+		min-height: 55%;
+		background-position: center;
+		background-attachment: scroll;
+	}
+	
+	#welcome {
+		font-size: 0.9em;
+	}
+	
+	blockquote {
+		font-style: italic;
+	}
+	
+	#video {
+		margin: 0;
+		padding: 0;
+		width: auto;
+		height: auto;
+	}
+	
+	.centered p, .centered p span, .centered h3 {
+		width: auto;
+		margin: 1em 0;
+		text-align: left;
+	}
+	
+	#welcome p, #intro p, #history p, #elmore p, #savoy p, #off-day p, #savoy blockquote {
+		width: auto;
+		min-width: 1em;
+		max-width: 100%;
+		margin: .7em 0;
+		padding: 0;
 	}
 
 	
 	.left-aligned p, .left-aligned h3 {
-		min-width: none !important;
-		width: 50%;
-		margin: 1em 25% 1em 25%;
+		min-width: 1em;
+		max-width: 100%;
+		width: 100%;
+		margin: 1em 0;
 	}
+	
+	.pullquote {
+		position: static;
+		left: 0;
+		text-align: center;
+		background: #9f1443;
+		width: 90%;
+		max-width: 26em;
+		margin: 0;
+		padding: 2em 5% 2em 5%;
+		z-index: 2;
+	}
+	
+	.pullquote span {
+		display: block;
+		text-align: center;
+		padding-top: 1em;
+	}
+	
+	.pullquote p {
+		font-weight: bold;
+		margin: 0;
+	}
+
 	
 }
 
